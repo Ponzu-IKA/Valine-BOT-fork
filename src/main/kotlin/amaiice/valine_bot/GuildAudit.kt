@@ -1,25 +1,17 @@
 package amaiice.valine_bot
 
 import amaiice.valine_bot.GuildAudit.MessageType.*
-import dev.kord.cache.api.getEntry
-import dev.kord.common.entity.MessageType
 import dev.kord.common.entity.Snowflake
 import dev.kord.core.Kord
 import dev.kord.core.behavior.channel.MessageChannelBehavior
 import dev.kord.core.behavior.channel.createEmbed
-import dev.kord.core.entity.Embed
 import dev.kord.core.entity.Message
 import dev.kord.core.entity.channel.Channel
 import dev.kord.core.event.message.MessageCreateEvent
 import dev.kord.core.event.message.MessageDeleteEvent
 import dev.kord.core.event.message.MessageUpdateEvent
-import dev.kord.core.live.live
 import dev.kord.core.on
-import dev.kord.rest.builder.message.MessageBuilder
-import io.github.petertrr.diffutils.diff
-import io.github.petertrr.diffutils.diffInline
 import java.awt.Color
-import kotlin.reflect.KType
 
 
 class GuildAudit(private val kord: Kord) {

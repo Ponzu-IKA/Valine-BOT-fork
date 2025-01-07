@@ -1,10 +1,6 @@
 package amaiice.valine_bot
 
 import dev.kord.core.entity.Message
-import io.github.petertrr.diffutils.algorithm.DiffAlgorithm
-import io.github.petertrr.diffutils.diff
-import io.github.petertrr.diffutils.patch.DeltaType
-import io.github.petertrr.diffutils.patch.EqualDelta
 import io.github.petertrr.diffutils.text.DiffRow
 import io.github.petertrr.diffutils.text.DiffRowGenerator
 import io.github.petertrr.diffutils.text.DiffTagGenerator

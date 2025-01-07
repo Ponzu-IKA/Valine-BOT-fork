@@ -3,10 +3,8 @@ package amaiice.valine_bot.commands
 import dev.kord.common.entity.Snowflake
 import dev.kord.core.Kord
 import dev.kord.core.behavior.interaction.response.respond
-import dev.kord.core.entity.interaction.GuildChatInputCommandInteraction
 import dev.kord.core.event.interaction.GuildChatInputCommandInteractionCreateEvent
 import dev.kord.core.on
-import dev.kord.gateway.DefaultGateway
 
 suspend fun commands(kord: Kord, guild: Long) {
     kord.createGuildChatInputCommand(Snowflake(guild), "ping", "pong!")
